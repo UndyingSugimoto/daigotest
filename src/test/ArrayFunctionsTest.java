@@ -25,10 +25,10 @@ class ArrayFunctionsTest {
 	public void connectStringArrayTest2() {
 		ArrayFunctions target = new ArrayFunctions();
 
-		String[] fst = {"あ","い","う","え","お"};
+		String[] fst = {"か","き","く","け","こ"};
 
 		String result =  target.connectStringArray(fst);
-		String expext = "あ";//期待される値
+		String expext = "かきくけこ";//期待される値
 
 		// この二つは一緒ですか？
 		assertEquals(expext, result);//期待される値、実際の値
@@ -55,7 +55,7 @@ class ArrayFunctionsTest {
 		String[] fst = {"A","B","C","D","E"};
 
 		String result =  target.returnFirstObject(fst);
-		String expext = "E";//期待される値
+		String expext = "A";//期待される値
 
 		// この二つは一緒ですか？
 		assertEquals(expext, result);//期待される値、実際の値
