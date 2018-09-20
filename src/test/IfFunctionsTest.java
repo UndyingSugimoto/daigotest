@@ -1,12 +1,10 @@
-package test;
-
 import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import main.IfFunctions;
 
-class IfFunctionsTest {
+public class IfFunctionsTest {
 
 	@Test
 	public void isEvenNumber1() {

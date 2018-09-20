@@ -2,11 +2,11 @@ package test;
 
 import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import main.ArrayFunctions;
 
-class ArrayFunctionsTest {
+public class ArrayFunctionsTest {
 
 	@Test
 	public void connectStringArrayTes1t() {
@@ -15,10 +15,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"あ","い","う","え","お"};
 
 		String result =  target.connectStringArray(fst);
-		String expext = "あいうえお";//期待される値
+		String expect = "あいうえお";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 	@Test
@@ -28,10 +28,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"か","き","く","け","こ"};
 
 		String result =  target.connectStringArray(fst);
-		String expext = "かきくけこ";//期待される値
+		String expect = "かきくけこ";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -42,10 +42,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"あ","い","う","え","お"};
 
 		String result =  target.returnFirstObject(fst);
-		String expext = "あ";//期待される値
+		String expect = "あ";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 	@Test
@@ -55,10 +55,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"A","B","C","D","E"};
 
 		String result =  target.returnFirstObject(fst);
-		String expext = "A";//期待される値
+		String expect = "A";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -69,10 +69,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"あ","い","う","え","お"};
 
 		String result =  target.returnLastObject(fst);
-		String expext = "お";//期待される値
+		String expect = "お";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 	@Test
@@ -82,10 +82,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"A","B","C","D","E"};
 
 		String result =  target.returnLastObject(fst);
-		String expext = "E";//期待される値
+		String expect = "E";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -96,10 +96,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"あ","い","う","え","お"};
 
 		String result =  target.returnConnectFirstAndLastObject(fst);
-		String expext = "あお";//期待される値
+		String expect = "あお";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -110,10 +110,10 @@ class ArrayFunctionsTest {
 		String[] fst = {"A","B","C","D","E"};
 
 		String result =  target.returnConnectFirstAndLastObject(fst);
-		String expext = "AE";//期待される値
+		String expect = "AE";//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -124,10 +124,10 @@ class ArrayFunctionsTest {
 		int[] fst = {1,2,3,4,5};
 
 		int result =  target.returnSumAllObject(fst);
-		int expext = 15;//期待される値
+		int expect = 15;//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -138,10 +138,10 @@ class ArrayFunctionsTest {
 		int[] fst = {1,1,1,1,1};
 
 		int result =  target.returnSumAllObject(fst);
-		int expext = 5;//期待される値
+		int expect = 5;//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -152,10 +152,10 @@ class ArrayFunctionsTest {
 		int[] fst = {1,2,3,4,5};
 
 		int[] result =  target.returnEvenNumber(fst);
-		int[] expext = {2,4};//期待される値
+		int[] expect = {2,4};//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
@@ -166,10 +166,10 @@ class ArrayFunctionsTest {
 		int[] fst = {6,7,8,9,10};
 
 		int[] result =  target.returnEvenNumber(fst);
-		int[] expext = {6,8,10};//期待される値
+		int[] expect = {6,8,10};//期待される値
 
 		// この二つは一緒ですか？
-		assertEquals(expext, result);//期待される値、実際の値
+		assertEquals(expect, result);//期待される値、実際の値
 
 	}
 
